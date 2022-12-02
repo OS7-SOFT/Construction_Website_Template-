@@ -10,6 +10,13 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
 .main-btn {
   background-color: var(--main-color);
   color: white;
@@ -91,6 +98,71 @@ body {
   color: var(--main-color);
 }
 /* End Header */
+
+/* Start Color Panel */
+
+.color-panel {
+  top: 150px;
+  right: -222px;
+  z-index: 100;
+  transition: var(--main-transition-duration);
+}
+
+.open-panel {
+  right: 2px;
+}
+
+.color-panel .toggle-setting svg {
+  cursor: pointer;
+  transition: var(--main-transition-duration);
+}
+
+.color-panel .toggle-setting svg:hover {
+  color: var(--main-color);
+}
+
+.color-panel .segment {
+  background-color: #00000063;
+}
+
+.color-panel .segment ul li {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  opacity: 0.4;
+  transition: var(--main-transition-duration);
+}
+
+.color-panel .segment ul li:hover {
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.color-panel .segment ul li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.color-panel .segment ul .active {
+  opacity: 1;
+}
+
+.color-panel .segment ul li:nth-child(1) {
+  background-color: #fbb200;
+}
+
+.color-panel .segment ul li:nth-child(2) {
+  background-color: #3f51b5;
+}
+
+.color-panel .segment ul li:nth-child(3) {
+  background-color: #b70000;
+}
+
+.color-panel .segment ul li:nth-child(4) {
+  background-color: #00537c;
+}
+/* End Color Panel */
 
 /* Start Landing */
 .landing {
